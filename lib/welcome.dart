@@ -18,39 +18,32 @@ class _WelcomeState extends State<Welcome> {
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Center(
-                child: Image.asset(
-                  'assets/images/illustration-1.png',
-                  width: 240,
-                ),
+              Image.asset(
+                'assets/images/illustration-1.png',
+                width: 240,
               ),
               SizedBox(
                 height: 18,
               ),
-              Center(
-                child: Text(
-                  "Let's get started",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
+              Text(
+                "Let's get started",
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Center(
-                child: Text(
-                  "Never a better time than now to start.",
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black38,
-                  ),
-                  textAlign: TextAlign.center,
+              Text(
+                "Never a better time than now to start.",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black38,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: 38,

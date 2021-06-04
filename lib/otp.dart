@@ -17,57 +17,53 @@ class _OtpState extends State<Otp> {
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              GestureDetector(
-                onTap: () => Navigator.pop(context),
-                child: Icon(
-                  Icons.arrow_back,
-                  size: 32,
-                  color: Colors.black54,
+              Align(
+                alignment: Alignment.topLeft,
+                child: GestureDetector(
+                  onTap: () => Navigator.pop(context),
+                  child: Icon(
+                    Icons.arrow_back,
+                    size: 32,
+                    color: Colors.black54,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 18,
               ),
-              Center(
-                child: Container(
-                  width: 200,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.deepPurple.shade50,
-                    shape: BoxShape.circle,
-                  ),
-                  child: Image.asset(
-                    'assets/images/illustration-3.png',
-                  ),
+              Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple.shade50,
+                  shape: BoxShape.circle,
+                ),
+                child: Image.asset(
+                  'assets/images/illustration-3.png',
                 ),
               ),
               SizedBox(
                 height: 24,
               ),
-              Center(
-                child: Text(
-                  'Verification',
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
+              Text(
+                'Verification',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Center(
-                child: Text(
-                  "Enter your OTP code number",
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black38,
-                  ),
-                  textAlign: TextAlign.center,
+              Text(
+                "Enter your OTP code number",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black38,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: 28,
@@ -123,30 +119,26 @@ class _OtpState extends State<Otp> {
               SizedBox(
                 height: 18,
               ),
-              Center(
-                child: Text(
-                  "Didn't you receive any code?",
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black38,
-                  ),
-                  textAlign: TextAlign.center,
+              Text(
+                "Didn't you receive any code?",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black38,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: 18,
               ),
-              Center(
-                child: Text(
-                  "Resend New Code",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.purple,
-                  ),
-                  textAlign: TextAlign.center,
+              Text(
+                "Resend New Code",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple,
                 ),
+                textAlign: TextAlign.center,
               ),
             ],
           ),

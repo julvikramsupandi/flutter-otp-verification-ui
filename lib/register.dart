@@ -19,57 +19,53 @@ class _RegisterState extends State<Register> {
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              GestureDetector(
-                onTap: () => Navigator.pop(context),
-                child: Icon(
-                  Icons.arrow_back,
-                  size: 32,
-                  color: Colors.black54,
+              Align(
+                alignment: Alignment.topLeft,
+                child: GestureDetector(
+                  onTap: () => Navigator.pop(context),
+                  child: Icon(
+                    Icons.arrow_back,
+                    size: 32,
+                    color: Colors.black54,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 18,
               ),
-              Center(
-                child: Container(
-                  width: 200,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.deepPurple.shade50,
-                    shape: BoxShape.circle,
-                  ),
-                  child: Image.asset(
-                    'assets/images/illustration-2.png',
-                  ),
+              Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple.shade50,
+                  shape: BoxShape.circle,
+                ),
+                child: Image.asset(
+                  'assets/images/illustration-2.png',
                 ),
               ),
               SizedBox(
                 height: 24,
               ),
-              Center(
-                child: Text(
-                  'Registration',
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
+              Text(
+                'Registration',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Center(
-                child: Text(
-                  "Add your phone number. we'll send you a verification code so we know you're real",
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black38,
-                  ),
-                  textAlign: TextAlign.center,
+              Text(
+                "Add your phone number. we'll send you a verification code so we know you're real",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black38,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: 28,
